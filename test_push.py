@@ -1,6 +1,7 @@
 # TODO: + пустой input
 # TODO: + 1 значение в input
 # TODO: + n значений в input
+# TODO: добавление разделителя \n
 
 import string_adder
 def test_string_adder_returns_zero_null_input():
@@ -12,4 +13,5 @@ def test_string_adder_returns_single_value_in_input():
 def test_string_adder_returns_two_values_in_input():
     assert string_adder.add("1,2") == 3
 
-
+def test_string_adder_returns_n_delimiter_in_input():
+    assert string_adder.add("1,2\n3") == 6
