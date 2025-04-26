@@ -1,4 +1,6 @@
-def add(s=None):
+def add(s=""):
     if not s:
         return 0
-    return int(s)
+    return sum([int(x) for x in s.split(",")])
+
+

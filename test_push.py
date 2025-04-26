@@ -1,6 +1,6 @@
 # TODO: + пустой input
 # TODO: + 1 значение в input
-# TODO: 2 значения в input
+# TODO: + n значений в input
 
 import string_adder
 def test_string_adder_returns_zero_null_input():
