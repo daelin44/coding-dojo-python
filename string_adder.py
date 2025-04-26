@@ -1,5 +1,4 @@
-def add(*args):
-    if not args:
+def add(s=None):
+    if not s:
         return 0
-    if len(args) == 1:
-        return int(args[0])
+    return int(s)

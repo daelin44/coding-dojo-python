@@ -1,5 +1,6 @@
 # TODO: + пустой input
-# TODO: 1 значение в input
+# TODO: + 1 значение в input
+# TODO: 2 значения в input
 
 import string_adder
 def test_string_adder_returns_zero_null_input():
@@ -7,5 +8,8 @@ def test_string_adder_returns_zero_null_input():
 
 def test_string_adder_returns_single_value_in_input():
     assert string_adder.add("1") == 1
+
+def test_string_adder_returns_two_values_in_input():
+    assert string_adder.add("1,2") == 3
 
 
