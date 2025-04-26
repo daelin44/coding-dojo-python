@@ -1,6 +1,16 @@
 def add(s=""):
     if not s:
         return 0
-    return sum([int(x) for x in s.split(",")])
+    nums = []
+    cur_num = ''
+    for c in s:
+        if c == ',' or c == '\n':
+            nums.append(int(cur_num))
+            cur_num = ''
+        else:
+            cur_num += c
+    if cur_num:
+        nums.append(int(cur_num))
+    return sum(nums)
 
 
